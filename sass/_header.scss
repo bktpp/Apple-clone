@@ -1,0 +1,115 @@
+.header {
+   //  grid-row: 1 / 3;
+   grid-column: 1 / -1;
+   padding: 4.5rem;
+   background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
+   background-size: cover;
+   background-position: 50% 95%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.heading-1 {
+   color: $color-black;
+   font-size: 5.3rem;
+   max-width: 59rem;
+   margin-bottom: 0.5rem;
+   line-height: 1.07143;
+}
+
+.heading-2 {
+   font-size: 5.3rem;
+   color: $color-black;
+   &--white {
+      color: #fff;
+   }
+}
+
+.heading-3 {
+   font-size: 4rem;
+   color: $color-black;
+
+   &--white {
+      color: #fff;
+   }
+
+   &-icon {
+      height: 3rem;
+      width: 3rem;
+      fill: currentColor;
+   }
+   &-caption {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: rgb(173, 30, 30);
+      margin-bottom: 1rem;
+   }
+}
+
+.heading-text {
+   font-size: 2.6rem;
+   margin-bottom: 0.5rem;
+
+   sup {
+      font-size: 1.5rem;
+   }
+
+   &--white {
+      color: #fff;
+      font-size: 2rem;
+   }
+
+   &--small {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+   }
+
+   &--smaller {
+      font-size: 1.8rem;
+      color: #6b6b6b;
+      margin-bottom: 0.8rem;
+   }
+}
+
+.heading-btn {
+   text-decoration: none;
+   display: inline-block;
+   color: #06c;
+   font-weight: 500;
+   font-size: 2rem;
+
+   &--right {
+      height: 2.3rem;
+      width: 2.3rem;
+      transform: translateY(0.6rem);
+      fill: currentColor;
+   }
+
+   &:hover,
+   &--right:hover {
+      text-decoration: underline;
+   }
+
+   &-small {
+      text-decoration: none;
+      display: inline-block;
+      color: #06c;
+      font-weight: 500;
+      font-size: 1.7rem;
+
+      &--right {
+         height: 2.2rem;
+         width: 2.2rem;
+         transform: translateY(0.6rem);
+         fill: currentColor;
+      }
+
+      &:hover,
+      &--right:hover {
+         text-decoration: underline;
+      }
+   }
+}

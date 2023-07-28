@@ -1,0 +1,29 @@
+$color-black: #1d1d1f;
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   font-family: SF Pro Display, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+}
+
+.main-container {
+   display: grid;
+   grid-template-rows: min-content repeat(6, 100vh) repeat(3, min-content);
+   grid-template-columns: repeat(8, minmax(min-content, 1fr));
+   gap: 0.8rem;
+   padding: 0.8rem 0.8rem 0 0.8rem;
+
+   background-color: #fbfbfd;
+}
