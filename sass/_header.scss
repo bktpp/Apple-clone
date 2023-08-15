@@ -1,17 +1,23 @@
 .header {
-   // grid-row: 2 / 3;
-   // margin-top: -0.8rem;
    grid-column: 1 / -1;
    padding: 4.5rem;
-   // background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
-   // background-size: cover;
-   // background-position: 50% 95%;
    text-align: center;
    display: flex;
    flex-direction: column;
    align-items: center;
    position: relative;
    overflow: hidden;
+   margin: 0 1rem 1rem;
+
+   @media only screen and (max-width: $bp-large) {
+      padding: 2rem;
+      background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
+      background-size: cover;
+      background-position: 50% 95%;
+   }
+   @media only screen and (max-width: $bp-med) {
+      height: 95dvh;
+   }
 }
 
 .heading-1 {

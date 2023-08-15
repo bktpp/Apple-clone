@@ -1,5 +1,11 @@
 $color-black: #1d1d1f;
 
+// Responsive
+$bp-large: 73.25em;
+$bp-med: 60.125em;
+$bp-small: 41.3125em;
+$bp-smallest: 32.5em;
+
 *,
 *::before,
 *::after {
@@ -11,6 +17,10 @@ $color-black: #1d1d1f;
 html {
    box-sizing: border-box;
    font-size: 62.5%;
+
+   @media only screen and (max-width: $bp-med) {
+      font-size: 50%;
+   }
 }
 
 body {
@@ -22,6 +32,10 @@ body {
    display: grid;
    grid-template-rows: min-content repeat(6, 90dvh) repeat(3, min-content);
    grid-template-columns: repeat(8, minmax(min-content, 1fr));
-
    background-color: #fbfbfd;
+
+   @media only screen and (max-width: $bp-med) {
+      display: flex;
+      flex-direction: column;
+   }
 }

@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 60.125em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: SF Pro Display, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -20,6 +25,12 @@ body {
   grid-template-rows: min-content repeat(6, 90dvh) repeat(3, min-content);
   grid-template-columns: repeat(8, minmax(min-content, 1fr));
   background-color: #fbfbfd;
+}
+@media only screen and (max-width: 60.125em) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .navbar {
@@ -41,6 +52,11 @@ body {
   flex-wrap: wrap;
   gap: 3.5rem;
 }
+@media only screen and (max-width: 73.25em) {
+  .navbar-list {
+    gap: 2rem;
+  }
+}
 .navbar-list__link:link, .navbar-list__link:visited {
   text-decoration: none;
   text-align: center;
@@ -61,6 +77,20 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin: 0 1rem 1rem;
+}
+@media only screen and (max-width: 73.25em) {
+  .header {
+    padding: 2rem;
+    background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
+    background-size: cover;
+    background-position: 50% 95%;
+  }
+}
+@media only screen and (max-width: 60.125em) {
+  .header {
+    height: 95dvh;
+  }
 }
 
 .heading-1 {
@@ -160,6 +190,14 @@ body {
   background-position: bottom;
   padding: 3.5rem;
   text-align: center;
+  margin: 0 1rem 1rem;
+}
+@media only screen and (max-width: 60.125em) {
+  .iphone14-pro {
+    height: 95dvh;
+    background-position: center;
+    margin: 0;
+  }
 }
 
 .iphone14 {
@@ -169,6 +207,13 @@ body {
   background-position: 50% 75%;
   padding: 3.5rem;
   text-align: center;
+  margin: 0 1rem 1rem;
+}
+@media only screen and (max-width: 60.125em) {
+  .iphone14 {
+    height: 95dvh;
+    margin: 0;
+  }
 }
 
 .deals__macbookair-15 {
@@ -178,6 +223,14 @@ body {
   background-size: cover;
   background-position: 50% 65%;
   text-align: center;
+  margin: 0 1rem 1rem 1rem;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__macbookair-15 {
+    height: 95dvh;
+    background-position: 50% 80%;
+    margin: 0;
+  }
 }
 .deals__visionpro {
   grid-column: 5/-1;
@@ -188,6 +241,19 @@ body {
   justify-content: end;
   align-items: center;
   padding-bottom: 6rem;
+  margin: 0 1rem 1rem 0;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__visionpro {
+    height: 95dvh;
+    background-position: center;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 41.3125em) {
+  .deals__visionpro {
+    background-position: center;
+  }
 }
 .deals__watch {
   grid-column: 1/5;
@@ -195,6 +261,14 @@ body {
   background-size: cover;
   text-align: center;
   padding: 4.5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__watch {
+    height: 95dvh;
+    background-position: 50% 70%;
+    margin: 0;
+  }
 }
 .deals__tradein {
   grid-column: 5/-1;
@@ -203,6 +277,13 @@ body {
   text-align: center;
   padding: 4.5rem;
   background-position: 50% 75%;
+  margin: 0 1rem 1rem 0;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__tradein {
+    height: 95dvh;
+    margin: 0;
+  }
 }
 .deals__ipadpro {
   grid-column: 1/5;
@@ -210,6 +291,14 @@ body {
   background-size: cover;
   text-align: center;
   padding: 4.5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__ipadpro {
+    height: 95dvh;
+    background-position: 50% 65%;
+    margin: 0;
+  }
 }
 .deals__card {
   grid-column: 5/-1;
@@ -218,6 +307,13 @@ body {
   text-align: center;
   background-position: 50% 95%;
   padding: 4.5rem;
+  margin: 0 1rem 1rem 0;
+}
+@media only screen and (max-width: 60.125em) {
+  .deals__card {
+    height: 95dvh;
+    margin: 0;
+  }
 }
 
 .ipadpro-img {
@@ -237,6 +333,11 @@ body {
   row-gap: 1.3rem;
   padding: 2rem 20rem;
 }
+@media only screen and (max-width: 41.3125em) {
+  .tc-list {
+    padding: 2rem;
+  }
+}
 .tc-list__item {
   letter-spacing: 0.06rem;
 }
@@ -255,6 +356,11 @@ body {
   letter-spacing: 0.06rem;
   background-color: rgba(218, 218, 218, 0.4);
   color: #6e6e73;
+}
+@media only screen and (max-width: 73.25em) {
+  .footer {
+    padding: 2rem;
+  }
 }
 .footer__item-1 {
   flex: 1 1 100%;
@@ -294,6 +400,17 @@ body {
   font-size: 1.2rem;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 73.25em) {
+  .links {
+    padding: 2rem;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 32.5em) {
+  .links {
+    justify-content: flex-start;
+  }
+}
 .links__col .header-list {
   color: #1d1d1f;
   margin: 1rem 0;
@@ -319,6 +436,11 @@ body {
   object-fit: cover;
   z-index: -1;
   transform: scale(2.3);
+}
+@media only screen and (max-width: 73.25em) {
+  .bg-video {
+    display: none;
+  }
 }
 .bg-video__content {
   width: 100%;
