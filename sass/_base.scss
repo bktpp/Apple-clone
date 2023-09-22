@@ -30,7 +30,8 @@ body {
 
 .main-container {
    display: grid;
-   grid-template-rows: min-content repeat(7, 90dvh) repeat(3, min-content);
+   // Change 6 to 7 rows after slider feature complete
+   grid-template-rows: min-content repeat(6, 90dvh) repeat(3, min-content);
    grid-template-columns: repeat(8, minmax(min-content, 1fr));
    background-color: #fbfbfd;
 
