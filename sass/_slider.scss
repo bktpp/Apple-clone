@@ -1,0 +1,39 @@
+.slider {
+   grid-column: 1 / -1;
+   grid-row: 8 / 9;
+   max-width: 99vw;
+   position: relative;
+   // background-color: orangered;
+   overflow: hidden;
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   position: relative;
+
+   &:hover &-container {
+      animation-play-state: paused;
+   }
+
+   &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 15rem;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), grey);
+      content: "";
+      z-index: 2;
+   }
+
+   &-container {
+      width: 100%;
+      display: inline-block;
+      transform: translateX(10%);
+      // animation: 20s slide infinite linear;
+   }
+
+   &-container img {
+      height: 50rem;
+      margin: 0 2rem;
+   }
+}

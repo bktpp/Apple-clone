@@ -1,10 +1,10 @@
 $color-black: #1d1d1f;
 
 // Breakpoints
-$bp-large: 73.25em;
-$bp-med: 60.125em;
-$bp-small: 41.3125em;
-$bp-smallest: 32.5em;
+$bp-large: 73.25em; // 1172px
+$bp-med: 60.125em; // 962px
+$bp-small: 41.3125em; // 661px
+$bp-smallest: 32.5em; // 520px
 
 *,
 *::before,
@@ -30,7 +30,7 @@ body {
 
 .main-container {
    display: grid;
-   grid-template-rows: min-content repeat(6, 90dvh) repeat(3, min-content);
+   grid-template-rows: min-content repeat(7, 90dvh) repeat(3, min-content);
    grid-template-columns: repeat(8, minmax(min-content, 1fr));
    background-color: #fbfbfd;
 

@@ -22,7 +22,7 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-rows: min-content repeat(6, 90dvh) repeat(3, min-content);
+  grid-template-rows: min-content repeat(7, 90dvh) repeat(3, min-content);
   grid-template-columns: repeat(8, minmax(min-content, 1fr));
   background-color: #fbfbfd;
 }
@@ -78,19 +78,22 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0 1rem 1rem;
+  background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
+  background-size: cover;
+  background-position: 50% 95%;
 }
 @media only screen and (max-width: 73.25em) {
   .header {
     padding: 2rem;
-    background-image: url(https://www.apple.com/v/home/bc/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large.jpg);
-    background-size: cover;
-    background-position: 50% 95%;
   }
 }
 @media only screen and (max-width: 60.125em) {
   .header {
     height: 95dvh;
   }
+}
+.header .bg-video {
+  height: 100%;
 }
 
 .heading-1 {
@@ -445,6 +448,49 @@ body {
 .bg-video__content {
   width: 100%;
   height: 100%;
+}
+
+.slider {
+  grid-column: 1/-1;
+  grid-row: 8/9;
+  max-width: 99vw;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.slider:hover .slider-container {
+  animation-play-state: paused;
+}
+.slider:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15rem;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), grey);
+  content: "";
+  z-index: 2;
+}
+.slider-container {
+  width: 100%;
+  display: inline-block;
+  transform: translateX(10%);
+}
+.slider-container img {
+  height: 50rem;
+  margin: 0 2rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
